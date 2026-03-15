@@ -1,5 +1,11 @@
+@ font-face {
+  font-family: "Comic Sans Custom";
+  src: url("/fonts/comic-sans-ms.woff2")
+  format("woff2");
+}
+
 body {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans Custom", cursive;
   background-color: white;
   color: black;
   margin: 0:
