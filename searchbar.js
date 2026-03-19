@@ -1,7 +1,7 @@
 const input = document.getElementById("searchInput");
 const output = document.getElementById("output");
 
-const commands = [help]; // stuff later
+const commands = ["help"]; // stuff later
 
 input.addEventListener("keydown", (e) => {
   if(e.key === "Enter") {
@@ -26,6 +26,6 @@ function handleCommand(cmd) {
 
 function showQuote(text) {
   const line = document.createElement("div");
-  line.innerHTML = '<i>"${text}"</i>'
+  line.innerHTML = `<i>"${text}"</i>`
   output.appendChild(line);
 }
