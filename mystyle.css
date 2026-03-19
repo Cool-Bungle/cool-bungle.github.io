@@ -3,18 +3,21 @@
   src: url("/fonts/comic-sans-ms.woff2");
   format("woff2");
 }
+
 body {
   font-family: "Comic Sans Custom", cursive;
   background-color: white;
   color: black;
   margin: 0;
 }
+
 .container {
   max-width: 700px;
   margin: 0;
   text-align: center;
   padding: 20px;
 }
+
 #draggable {
   position: absolute;
   left: 100px;
@@ -22,6 +25,7 @@ body {
   cursor: grab;
   user-select: none;
 }
+
 * {
   box-sizing: border-box;
 }
