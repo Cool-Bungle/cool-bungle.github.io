@@ -16,6 +16,13 @@ body {
   text-align: center;
   padding: 20px;
 }
+#draggable {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  cursor: grab;
+}
+
 * {
   box-sizing: border-box;
 }
