@@ -22,3 +22,4 @@ document.addEventListener("mouseup", () => {
   isDragging = false;
   img.style.cursor = "grab";
 });
+img.ondragstart = () => false;
