@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Comic Sans Custom";
-  src: url("/fonts/comic-sans-ms.woff2");
-  format: ("woff2");
+  src: url("/fonts/comic-sans-ms.woff2") 
+  format("woff2");
 }
 
 body {
@@ -51,10 +51,10 @@ body {
   margin: 0;
 }
 
-.center{
+.center {
   position: absolute;
-  top: 50%
-  left: 50%
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .search-box {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .search-box input {
@@ -92,7 +92,7 @@ body {
 #output {
   position: absolute;
   right: 20px;
-  top: 50%
+  top: 50%;
   transform: translateY(-50%);
   text-align: right;
   font-size: 18px;
