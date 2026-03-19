@@ -1,16 +1,17 @@
 const img = document.getElementById("draggable");
 
+img.addEventListner = ("dragstart", (e) => e.preventDefault());
+
 let isDragging = false;
 let offsetX, offsetY;
 
-img.addEventListner = ("dragstart", (e) => e.preventDefault());
 img.addEventListener("mousedown", (e) => {
   isDragging = true;
 
   offsetX = e.clientX - img.offsetLeft;
   offsetY = e.clientY - img.offsetTop;
 
-  img.style.cursor = "grabbing";
+  document.body.style.userSelect = "none";
 });
 
 document.addEventListener("mousemove", (e) => {
@@ -22,5 +23,5 @@ document.addEventListener("mousemove", (e) => {
 
 document.addEventListener("mouseup", () => {
   isDragging = false;
-  img.style.cursor = "grab";
+  document.body.style.userSelect = "auto";
 });
