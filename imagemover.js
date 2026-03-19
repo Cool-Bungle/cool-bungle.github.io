@@ -1,6 +1,6 @@
 const img = document.getElementById("draggable");
 
-img.addEventListner = ("dragstart", (e) => e.preventDefault());
+img.addEventListener("dragstart", (e) => e.preventDefault());
 
 let isDragging = false;
 let offsetX, offsetY;
