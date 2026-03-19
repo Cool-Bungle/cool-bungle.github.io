@@ -15,7 +15,7 @@ img.addEventListener("mousedown", (e) => {
 });
 
 document.addEventListener("mousemove", (e) => {
-  if(!isDragging) return;
+  if (!isDragging) return;
 
   img.style.left = (e.clientX - offsetX) + "px";
   img.style.top = (e.clientY - offsetY) + "px";
