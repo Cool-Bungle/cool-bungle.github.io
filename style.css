@@ -9,13 +9,15 @@ body {
   background-color: white;
   color: black;
   margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  max-width: 700px;
-  margin: 0;
   text-align: center;
-  padding: 20px;
 }
 
 #draggable {
@@ -24,6 +26,23 @@ body {
   top: 100px;
   cursor: grab;
   user-select: none;
+}
+
+.search-box {
+  margin-top: 20px
+}
+
+.search-box input {
+  width: 300px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: black;
 }
 
 * {
