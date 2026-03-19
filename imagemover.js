@@ -2,6 +2,8 @@ const img = document.getElementById("draggable");
 
 let isDragging = false;
 let offsetX, offsetY;
+
+img.addEventListner = ("dragstart", (e) => e.preventDefault());
 img.addEventListener("mousedown", (e) => {
   isDragging = true;
 
@@ -22,4 +24,3 @@ document.addEventListener("mouseup", () => {
   isDragging = false;
   img.style.cursor = "grab";
 });
-img.ondragstart = () => false;
