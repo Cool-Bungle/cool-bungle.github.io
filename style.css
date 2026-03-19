@@ -86,7 +86,7 @@ body {
 }
 
 .search-box input {
-  width: 100%;
+  width: 50vh;
   padding: 12px 20px;
   font-size: clamp(14px, 2vw, 18px);
   border-radius: 25px;
