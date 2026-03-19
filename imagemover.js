@@ -1,6 +1,6 @@
 const img = document.getElementById("draggable");
 
-let isDragging = False;
+let isDragging = false;
 let offsetX, offsetY;
 img.addEventListener("mousedown", (e) => {
   isDragging = true;
