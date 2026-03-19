@@ -69,7 +69,12 @@ body {
   left: 100px;
   top: 100px;
   cursor: grab;
+  
+  width: clamp(80px, 15vw, 200px);
+  height: auto;
+  
   user-select: none;
+  touch-action: none;
 }
 
 .search-box {
