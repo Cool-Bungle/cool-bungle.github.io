@@ -76,7 +76,7 @@ body {
 }
 
 .logo{
-  width: 50vh;
+  width: clamp(150px, 40vw, 400px);
   margin-bottom: 20px;
 }
 
@@ -95,11 +95,11 @@ body {
 }
 
 .search-box {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .search-box input {
-  width: 50vh;
+  width: clamp(200px, 60vw, 400px);
   padding: 12px 20px;
   font-size: clamp(14px, 2vw, 18px);
   border-radius: 25px;
