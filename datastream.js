@@ -16,7 +16,7 @@ function cycleDataStream() {
 
   setTimeout(() => {
     datastream.style.opacity = 0;
-  }, 2000);
+  }, 4000);
 }
 
-setInterval(cycleDataStream, 4000);
+setInterval(cycleDataStream, 6000);
