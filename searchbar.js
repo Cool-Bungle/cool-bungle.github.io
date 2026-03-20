@@ -1,7 +1,7 @@
 const input = document.getElementById("searchInput");
 const output = document.getElementById("output");
 
-const commands = ["help", "enable tile", "disable tile"]; // stuff later
+const commands = ["help", "clear output" "enable tile", "disable tile"]; // stuff later
 
 input.addEventListener("keydown", (e) => {
   if(e.key === "Enter") {
@@ -23,8 +23,12 @@ function handleCommand(cmd) {
     output.innerHTML = 
       "commands:<br>" +
       "help<br>" +
+      "clear outputs" +
       "enable tile<br>" +
       "disable tile<br>";
+  }
+    if (cmd === "clear output") {
+    output.innerHTML = ""
   }
   if (cmd === "enable tile") {
     output.innerHTML = "decorate.";
