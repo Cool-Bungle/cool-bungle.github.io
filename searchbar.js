@@ -23,11 +23,16 @@ function handleCommand(cmd) {
     output.innerHTML = 
       "commands:<br>" +
       "help<br>" +
-      "enable tile";
+      "enable tile<br>" +
+      "disable tile<br>";
   }
   if (cmd === "enable tile") {
     output.innerHTML = "decorate.";
     document.getElementById("draggable").style.display = "block";
+  }
+  if (cmd === "disable tile") {
+    output.innerHTML = "okay fine. be that way"
+    document.getElementById("draggable").style.display = "none";
   }
 }
 
