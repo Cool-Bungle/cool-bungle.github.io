@@ -23,7 +23,7 @@ function handleCommand(cmd) {
     output.innerHTML = 
       "commands:<br>" +
       "help<br>" +
-      "clear outputs" +
+      "clear output" +
       "enable tile<br>" +
       "disable tile<br>";
   }
