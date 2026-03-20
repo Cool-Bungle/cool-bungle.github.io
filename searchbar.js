@@ -1,7 +1,7 @@
 const input = document.getElementById("searchInput");
 const output = document.getElementById("output");
 
-const commands = ["help"]; // stuff later
+const commands = ["help","enable tile"]; // stuff later
 
 input.addEventListener("keydown", (e) => {
   if(e.key === "Enter") {
@@ -20,11 +20,14 @@ input.addEventListener("keydown", (e) => {
 
 function handleCommand(cmd) {
   if (cmd === "help") {
-    output.innerHTML = "i can't help you bud";
+    output.innerHTML = 
+      "i can't help you bud" +
+      ":help<br>" +
+      ":enable title";
   }
   if (cmd === "enable tile") {
     output.innerHTML = "decorate.";
-    document.getElementById("draggable").style.display = "block"
+    document.getElementById("draggable").style.display = "block";
   }
 }
 
