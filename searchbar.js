@@ -24,7 +24,7 @@ function handleCommand(cmd) {
   }
   if (cmd === "enable tile") {
     output.innerHTML = "decorate.";
-    // okay, I don't know how to do that
+    document.getElementById("draggable").style.display = "block"
   }
 }
 
