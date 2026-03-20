@@ -20,10 +20,11 @@ input.addEventListener("keydown", (e) => {
 
 function handleCommand(cmd) {
   if (cmd === "help") {
-    output.innerHTML = "List of commands: \n enable tile";
+    output.innerHTML = `List of commands:
+    enable tile`;
   }
   if (cmd === "enable tile") {
-    output.innerHTML = "Decorate. \n \n I'll figure it out";
+    output.innerHTML = "Decorate.";
     
   }
 }
