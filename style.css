@@ -23,7 +23,7 @@ body {
   height: 100%;
 }
 
-.top-left, .bottomleft, .top-right, .bottom-right {
+.top-left, .bottom-left, .top-right, .bottom-right {
   position: absolute;
   margin: 0;
 }
