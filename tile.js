@@ -28,12 +28,17 @@ document.addEventListener("mouseup", () => {
 
 img.addEventListener("touchstart", (e) => {
   const touch = e.touches[0];
-  startDrag(touch.clienX, touch.clientY);
+  isDragging = true;
+  offsetX = touch.clientX - img.offsetLeft;
+  offsetX = touch.clientY - img.offsetTop;
 })
 
 img.addEventListener("touchmove", (e) => {
   const touch = e.touches[0];
-  moveDrag(touch.clienX, touch.clientY);
+  img.style.left = (touch.clientX - offsetX) + "px";
+  img.style.top = (touch.clientY - offsetY) + "px";
 })
 
-document.addEventListener("touchend", endDrag);
+document.addEventListener("touchend", () => {
+  isDragging = false;
+}
