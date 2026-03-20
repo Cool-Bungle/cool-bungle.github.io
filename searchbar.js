@@ -1,7 +1,7 @@
 const input = document.getElementById("searchInput");
 const output = document.getElementById("output");
 
-const commands = ["help", "clear output" "enable tile", "disable tile"]; // stuff later
+const commands = ["help", "clear output", "enable tile", "disable tile"]; // stuff later
 
 input.addEventListener("keydown", (e) => {
   if(e.key === "Enter") {
