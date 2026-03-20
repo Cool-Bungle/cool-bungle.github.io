@@ -30,7 +30,7 @@ img.addEventListener("touchstart", (e) => {
   const touch = e.touches[0];
   isDragging = true;
   offsetX = touch.clientX - img.offsetLeft;
-  offsetX = touch.clientY - img.offsetTop;
+  offsetY = touch.clientY - img.offsetTop;
 })
 
 img.addEventListener("touchmove", (e) => {
@@ -41,4 +41,4 @@ img.addEventListener("touchmove", (e) => {
 
 document.addEventListener("touchend", () => {
   isDragging = false;
-}
+});
