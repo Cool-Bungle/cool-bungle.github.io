@@ -1,8 +1,9 @@
 const phrases = [
   "guh",
-  "wazzup",
+  "wazzup twin",
   "splash text",
-  "click me",
+  "try typing help in the search bar",
+  "i'm gonna kiss you"
 ];
 
 const datastream = document.getElementById("datastream");
