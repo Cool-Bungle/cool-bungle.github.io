@@ -9,7 +9,6 @@ body {
   background-color: white;
   color: black;
   margin: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,33 +23,15 @@ body {
   height: 100%;
 }
 
-.top-left {
+.top-left, .bottomleft, .top-right, .bottom-right {
   position: absolute;
-  top: 20px;
-  left: 20px;
   margin: 0;
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-}
-
-.top-right {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  margin: 0;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  margin: 0;
-}
+.top-left {top: 20px; left: 20px;}
+.bottom-left {top: 20px; right: 20px;}
+.top-right {bottom: 20px; left: 20px;}
+.bottom-right {bottom: 20px; right: 20px;}
 
 .center {
   position: absolute;
@@ -58,7 +39,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   width: 90%;
   max-width: 500px;
 }
@@ -75,10 +55,7 @@ body {
   pointer-events: none;
 }
 
-.logo{
-  width: clamp(150px, 40vw, 400px);
-  margin-bottom: 20px;
-}
+.logo{width: clamp(150px, 40vw, 400px); margin-bottom: 20px;}
 
 #draggable {
   display: none;
@@ -86,16 +63,10 @@ body {
   left: 100px;
   top: 100px;
   cursor: grab;
-  
   width: clamp(80px, 15vw, 200px);
   height: auto;
-  
   user-select: none;
   touch-action: none;
-}
-
-.search-box {
-  margin-top: 0px;
 }
 
 .search-box input {
@@ -107,9 +78,7 @@ body {
   outline: none;
 }
 
-.search-box input:focus {
-  border-color: black;
-}
+.search-box input:focus {border-color: black;}
 
 #output {
   position: absolute;
