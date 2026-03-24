@@ -34,12 +34,12 @@ function handleCommand(cmd) {
   if (cmd === "enable tile") {
     output.innerHTML = "decorate." +
       "<br>";
-    document.getElementById(".draggable").style.display = "block";
+    document.querySelector(".draggable").style.display = "block";
   }
   if (cmd === "disable tile") {
     output.innerHTML = "okay fine. be that way<br>" +
       "<br>";
-    document.getElementById(".draggable").style.display = "none";
+    document.querySelector(".draggable").style.display = "none";
   }
 }
 
