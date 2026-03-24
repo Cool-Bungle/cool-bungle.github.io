@@ -30,6 +30,7 @@ function makeDraggable(el) {
   });
 
   el.addEventListener("touchmove", e => {
+    e.preventDefault();
     if (!isDragging) return;
     const t = e.touches[0];
     el.style.left = (t.clientX - offsetX) + "px";
