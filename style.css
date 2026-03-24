@@ -57,7 +57,7 @@ body {
 
 .logo{width: clamp(150px, 40vw, 400px); margin-bottom: 20px;}
 
-#draggable {
+.draggable {
   display: none;
   position: absolute;
   left: 100px;
