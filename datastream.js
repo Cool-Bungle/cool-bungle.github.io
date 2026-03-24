@@ -2,8 +2,9 @@ const phrases = [
   "guh",
   "wazzup twin",
   "splash text",
-  "try typing help in the search bar",
-  "i'm gonna kiss you"
+  "this will be relevant later",
+  "i'm gonna kiss you",
+  "look behind you"
 ];
 
 const datastream = document.getElementById("datastream");
