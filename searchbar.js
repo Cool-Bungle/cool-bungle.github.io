@@ -25,17 +25,20 @@ function handleCommand(cmd) {
       "help<br>" +
       "clear output<br>" +
       "enable tile<br>" +
-      "disable tile<br>";
+      "disable tile<br>" +
+      "<br>";
   }
     if (cmd === "clear output") {
     output.innerHTML = ""
   }
   if (cmd === "enable tile") {
-    output.innerHTML = "decorate.";
+    output.innerHTML = "decorate." +
+      "<br>";
     document.getElementById("draggable").style.display = "block";
   }
   if (cmd === "disable tile") {
-    output.innerHTML = "okay fine. be that way"
+    output.innerHTML = "okay fine. be that way<br>" +
+      "<br>";
     document.getElementById("draggable").style.display = "none";
   }
 }
