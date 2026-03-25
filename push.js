@@ -1,4 +1,3 @@
- <script>
     async function send() {
       const message = document.getElementById("msg").value;
 
