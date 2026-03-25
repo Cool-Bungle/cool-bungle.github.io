@@ -8,6 +8,12 @@ input.addEventListener("keydown", (e) => {
     const value = input.value.trim();
     const lower = value.toLowerCase();
 
+    if(lower.startsWith("send: ")) {
+      sendMessage(value.slice(5));
+      input.value = "";
+      return;
+    }
+
     if(commands.includes(lower)) {
       handleCommand(lower);
     } else {
