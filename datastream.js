@@ -4,7 +4,8 @@ const phrases = [
   "splash text",
   "this will be relevant later",
   "i'm gonna kiss you",
-  "look behind you"
+  "look behind you",
+  "you can send a push notification directly to my phone"
 ];
 
 const datastream = document.getElementById("datastream");
