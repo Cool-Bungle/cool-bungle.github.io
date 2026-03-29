@@ -51,6 +51,7 @@ function handleCommand(cmd) {
 
 function showQuote(text) {
   const line = document.createElement("div");
-  line.innerHTML = `<i>"${text}"</i>`
+  line.innerHTML = `<i></i>`;
+  line.firstChild.textContent = `"${text}"`;
   output.appendChild(line);
 }
