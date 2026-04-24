@@ -74,7 +74,7 @@ body {
 }
 
 .search-box input {
-  width: clamp(200px, 60vw, 400px);
+  width: clamp(100px, 60vw, 400px);
   padding: 12px 20px;
   font-size: clamp(14px, 2vw, 18px);
   border-radius: 25px;
