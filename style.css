@@ -46,6 +46,21 @@ body {
   max-width: 500px;
 }
 
+.apps {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
+
 #datastream {
   position: absolute;
   top: 25px;
