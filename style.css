@@ -59,7 +59,7 @@ body {
   pointer-events: none;
 }
 
-.logo{width: clamp(150px, 3vh, 400px); margin-bottom: 20px;}
+.logo{width: clamp(100px, 3vh, 400px); margin-bottom: 20px;}
 
 .draggable {
   display: none;
