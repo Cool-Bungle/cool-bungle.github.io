@@ -88,8 +88,7 @@ body {
   position: absolute;
   left: 20px;
   bottom: 40px;
-  transform: translateY(-50%);
-  text-align: right;
+  text-align: left;
   max-width: 40vw;
   font-size: clamp(14px, 1.5vw, 18px);
 }
