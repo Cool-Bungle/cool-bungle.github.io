@@ -86,8 +86,8 @@ body {
 
 #output {
   position: absolute;
-  left: 20px;
-  bottom: 70px;
+  left: 40px;
+  bottom: 100px;
   text-align: left;
   max-width: 40vw;
   font-size: clamp(14px, 1.5vw, 18px);
