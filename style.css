@@ -27,9 +27,8 @@ body {
 
 #datastream {
   position: absolute;
-  top: 80px;
-  right: 20px;
-  width: 100%;
+  top: 1vh;
+  right: 1vw;
   text-align: right;
   font-style: italic;
   color: rgb(131, 121, 105);
