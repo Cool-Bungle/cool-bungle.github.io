@@ -29,7 +29,7 @@ html, body {
   position: relative;
   background-color: white;
   overflow: hidden;
-  container-type: inline-size; /* Enables container query units relative to stage */
+  container-type: size; /* Width and height */
 }
 
 /* Letterboxing */
