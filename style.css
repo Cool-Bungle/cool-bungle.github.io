@@ -33,23 +33,23 @@ html, body {
 }
 
 /* Letterboxing */
-/* Landscape Mode (4:3) */
+/* Landscape Mode (7:5) */
 @media (min-aspect-ratio: 101/100) {
   .stage {
     height: 100dvh;
-    width: calc(100dvh * (4 / 3));
+    width: calc(100dvh * (7 / 5));
     max-width: 100dvw;
-    max-height: calc(100dvw * (3 / 4));
+    max-height: calc(100dvw * (5 / 7));
   }
 }
 
-/* Portrait Mode (3:4) */
+/* Portrait Mode (4:5) */
 @media (max-aspect-ratio: 99/100) {
   .stage {
     width: 100dvw;
-    height: calc(100dvw * (4 / 3));
+    height: calc(100dvw * (5 / 4));
     max-height: 100dvh;
-    max-width: calc(100dvh * (3 / 4));
+    max-width: calc(100dvh * (4 / 5));
   }
 }
 
