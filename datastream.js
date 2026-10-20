@@ -3,9 +3,9 @@ const phrases = [
   "wazzup twin",
   "splash text",
   "this will be relevant later",
-  "i'm gonna kiss you",
   "look behind you",
-  "you can send a push notification directly to my phone"
+  "you can send a push notification directly to my phone",
+  "this is your field of view"
 ];
 
 const datastream = document.getElementById("datastream");
