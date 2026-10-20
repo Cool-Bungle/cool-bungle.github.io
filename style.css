@@ -65,9 +65,9 @@ html, body {
 
 #datastream {
   position: absolute;
-  top: 2cqi;
-  right: 2cqi;
-  font-size: 2.5cqi;
+  top: 2cqmin;
+  right: 2cqmin;
+  font-size: 2.5cqmin;
   text-align: right;
   font-style: italic;
   color: rgb(131, 121, 105);
@@ -78,10 +78,10 @@ html, body {
 
 .draggable {
   position: absolute;
-  left: 10cqi;
-  top: 10cqi;
+  left: 10cqmin;
+  top: 10cqmin;
   cursor: grab;
-  width: 15cqi;
+  width: 15cqmin;
   height: auto;
   user-select: none;
   touch-action: none;
@@ -89,13 +89,13 @@ html, body {
 
 .search-box input {
   position: absolute;
-  bottom: 4cqi;
-  left: 4cqi;
-  width: 60cqi;
-  padding: 2.5cqi 4cqi;
-  font-size: 3.5cqi;
-  border-radius: 6cqi;
-  border: 0.3cqi solid #ccc;
+  bottom: 4cqmin;
+  left: 4cqmin;
+  width: 60cqmin;
+  padding: 2.5cqmin 4cqmin;
+  font-size: 3.5cqmin;
+  border-radius: 6cqmin;
+  border: 0.3cqmin solid #ccc;
   outline: none;
 }
 
@@ -105,9 +105,9 @@ html, body {
 
 #output {
   position: absolute;
-  left: 4cqi;
-  bottom: 16cqi;
+  left: 4cqmin;
+  bottom: 16cqmin;
   text-align: left;
-  max-width: 60cqi;
-  font-size: 3.2cqi;
+  max-width: 60cqmin;
+  font-size: 3.2cqmin;
 }
