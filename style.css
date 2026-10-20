@@ -32,7 +32,7 @@ html, body {
   container-type: size; /* Width and height */
 }
 
-#glcanvas {
+#glCanvas {
   position: absolute;
   top: 0;
   left: 0;
