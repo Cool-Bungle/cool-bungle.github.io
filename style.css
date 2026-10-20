@@ -6,29 +6,68 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
-  color: black;
+  background-color: black; /* Color of the letterbox bars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Comic Sans Custom", cursive;
   touch-action: none;
 }
 
-.container {
+/* Base Stage Layout */
+.stage {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  container-type: inline-size; /* Enables container query units relative to stage */
 }
+
+/* Letterboxing */
+/* Landscape Mode (4:3) */
+@media (min-aspect-ratio: 101/100) {
+  .stage {
+    height: 100dvh;
+    width: calc(100dvh * (4 / 3));
+    max-width: 100dvw;
+    max-height: calc(100dvw * (3 / 4));
+  }
+}
+
+/* Portrait Mode (3:4) */
+@media (max-aspect-ratio: 99/100) {
+  .stage {
+    width: 100dvw;
+    height: calc(100dvw * (4 / 3));
+    max-height: 100dvh;
+    max-width: calc(100dvh * (3 / 4));
+  }
+}
+
+/* Square Mode (1:1) */
+@media (min-aspect-ratio: 99/100) and (max-aspect-ratio: 101/100) {
+  .stage {
+    width: 100dvw;
+    height: 100dvh;
+  }
+}
+
+/* Content (Scales relative to .stage) */
 
 #datastream {
   position: absolute;
-  top: 1vh;
-  right: 1vw;
-  font-size: 1.2vw;
+  top: 2cqi;
+  right: 2cqi;
+  font-size: 2.5cqi;
   text-align: right;
   font-style: italic;
   color: rgb(131, 121, 105);
@@ -39,10 +78,10 @@ html, body {
 
 .draggable {
   position: absolute;
-  left: 10vw;
-  top: 10vh;
+  left: 10cqi;
+  top: 10cqi;
   cursor: grab;
-  width: 10vw;
+  width: 15cqi;
   height: auto;
   user-select: none;
   touch-action: none;
@@ -50,13 +89,13 @@ html, body {
 
 .search-box input {
   position: absolute;
-  bottom: 2vh;
-  left: 2vw;
-  width: 48vw;
-  padding: 1.2vw 2vw;
-  font-size: 1.5vw;
-  border-radius: 3vw;
-  border: 0.1vw solid #ccc;
+  bottom: 4cqi;
+  left: 4cqi;
+  width: 60cqi;
+  padding: 2.5cqi 4cqi;
+  font-size: 3.5cqi;
+  border-radius: 6cqi;
+  border: 0.3cqi solid #ccc;
   outline: none;
 }
 
@@ -66,9 +105,9 @@ html, body {
 
 #output {
   position: absolute;
-  left: 2vw;
-  bottom: 12vh;
+  left: 4cqi;
+  bottom: 16cqi;
   text-align: left;
-  max-width: 40vw;
-  font-size: 1.5vw;
+  max-width: 60cqi;
+  font-size: 3.2cqi;
 }
