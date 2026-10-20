@@ -8,7 +8,7 @@ input.addEventListener("keydown", (e) => {
     const value = input.value.trim();
     const lower = value.toLowerCase();
 
-    if(lower.startsWith("send: ")) {
+    if(lower.startsWith("push: ")) {
       sendMessage(value.slice(5));
       input.value = "";
       return;
@@ -32,6 +32,7 @@ function handleCommand(cmd) {
       "clear output<br>" +
       "enable tile<br>" +
       "disable tile<br>" +
+      "push: <br>" +
       "<br>";
   }
     if (cmd === "clear output") {
