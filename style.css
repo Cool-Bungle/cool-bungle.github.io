@@ -78,8 +78,8 @@ html, body {
 
 .lock {
   position: fixed;
-  left: 50cqw;
-  top: 50cqh;
+  left: 50vw;
+  top: 50vh;
   transform-origin: center center;
 }
 
