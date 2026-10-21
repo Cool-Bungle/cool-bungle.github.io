@@ -77,6 +77,9 @@ html, body {
 }
 
 .lock {
+  position: fixed;
+  left: 50cqw;
+  top: 50cqh;
   transform-origin: center center;
 }
 
