@@ -12,6 +12,12 @@ if (window.DeviceOrientationEvent) {
     }, true);
 }
 
+el.style.position = "fixed";
+el.style.left = "50%";
+el.style.top = "50%";
+el.style.margin = "0";
+el.style.transformOrigin = "center center";
+
 function HorizonLock(el) {
     window.addEventListener("deviceorientation", (event) => {
         if (event.alpha == null || event.beta == null || event.gamma == null) return;
