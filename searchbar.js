@@ -3,8 +3,6 @@ const output = document.getElementById("output");
 
 const commands = ["help", "clear output", "enable tile", "disable tile"]; // stuff later
 
-document.querySelector(".draggable").style.display = "none";
-
 input.addEventListener("keydown", (e) => {
   if(e.key === "Enter") {
     const value = input.value.trim();
