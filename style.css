@@ -76,6 +76,10 @@ html, body {
   pointer-events: none;
 }
 
+.lock {
+  transform-origin: center center;
+}
+
 .draggable {
   display: none;
   position: absolute;
