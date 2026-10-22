@@ -64,7 +64,7 @@ html, body {
 /* Content (Scales relative to .stage) */
 
 #datastream {
-  position: absolute;
+  position: fixed;
   top: 2cqmin;
   right: 2cqmin;
   font-size: 2.5cqmin;
