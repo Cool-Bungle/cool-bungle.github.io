@@ -20,7 +20,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Comic Sans Custom", cursive;
+  font-family: "Comic Sans Custom", Trebuchet MS;
   touch-action: none;
 }
 
