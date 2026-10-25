@@ -43,13 +43,13 @@ html, body {
   }
 }
 
-/* Portrait Mode (4:5) */
+/* Portrait Mode (5:7) */
 @media (max-aspect-ratio: 99/100) {
   .stage {
     width: 100dvw;
-    height: calc(100dvw * (5 / 4));
+    height: calc(100dvw * (7 / 5));
     max-height: 100dvh;
-    max-width: calc(100dvh * (4 / 5));
+    max-width: calc(100dvh * (5 / 7));
   }
 }
 
