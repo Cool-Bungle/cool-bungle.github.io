@@ -5,7 +5,8 @@ const phrases = [
   "this will be relevant later",
   "look behind you",
   "you can send a push notification directly to my phone",
-  "this is your field of view"
+  "this is your field of view",
+  "are you scared of the square?"
 ];
 
 const datastream = document.getElementById("datastream");
