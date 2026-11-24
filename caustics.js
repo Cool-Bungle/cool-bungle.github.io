@@ -1,6 +1,6 @@
 const canvas = document.getElementById('webgl-bg');
 const stage = document.querySelector('.stage');
-const gl = canvas.getContext('webgl2', { alpha: true } || canvas.getContext('webgl', { alpha: true });
+const gl = canvas.getContext('webgl2', { alpha: true }) || canvas.getContext('webgl', { alpha: true });
 
 function syncCanvasSize() {
   const rect = stage.getBoundingClientRect();
