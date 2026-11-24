@@ -20,7 +20,7 @@ const observer = new ResizeObserver(syncCanvasSize);
 observer.observe(stage);
 
 function render(time){
-  gl.clearColor(0.05, 0.07, 0.12, 1);
+  gl.clearColor(0, 0, 0, 0.1);
   gl.clear(gl.COLOR_BUFFER_BIT);
 
 
